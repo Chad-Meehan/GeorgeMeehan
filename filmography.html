@@ -26,14 +26,15 @@
         <header>	
             <nav class="nav-box1">
             <div class="logo1"><a href="index.html">
-                <img src="images/RF_LOGO_2022_TRANS_V1.png" alt="Logo"/>
-              </a></div>
-
+                <img src="images/GM Logo WHITE V2.png" alt="Logo"/>
+              </a>
+            </div>
+              
 
             <ul class="nav-links1" id="nav-links1">
             <li><a href="index.html" class="w3-button w3-round w3-hover-red">Home</a></li>
-            <li><a href="about.html" class="w3-button w3-round w3-hover-red">About</a></li>
             <li><a href="filmography.html" class="w3-button w3-round w3-red">Filmography</a></li>
+            <li><a href="photography.html" class="w3-button w3-round w3-hover-red">Photography</a></li>
             <li><a href="contact.html" class="w3-button w3-round w3-hover-red">Contact</a></li>
             </ul>
 
@@ -56,7 +57,6 @@ const navSlide = () => {
 	//toggle- Nav
 	nav.classList.toggle ("nav-active");
     document.getElementById("film-parent1").style.opacity = "1";
-    document.getElementById("yt-btn").style.opacity = "1";
 	
 	//Animate Links
 	navLinks.forEach((link, index) => {
@@ -65,7 +65,6 @@ const navSlide = () => {
 	} else {
 	link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
     document.getElementById("film-parent1").style.opacity = "0";
-    document.getElementById("yt-btn").style.opacity = "0";
 	}
 	});
 	//burger animation
@@ -77,8 +76,8 @@ const navSlide = () => {
 	
 	navSlide();
 
-            </script>
-        
+            </script><hr>
+
         </header>
       
           <div class="front-headline w3-container w3-center w3-mobile hidden">
