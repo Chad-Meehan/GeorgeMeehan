@@ -148,6 +148,16 @@ body {
     height: 1000px;
 }
 
+.milkingcolours {
+    display: flex;
+    background-image: url(../images/THUMBNAILS/milkingcoloursthumbnail.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: auto; 
+    height: 800px;
+}
+
 .fpage-vids {
     display: flex;
     flex-direction: row;
