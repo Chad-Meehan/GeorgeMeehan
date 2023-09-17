@@ -34,7 +34,7 @@
             <li><a href="index.html" class="w3-button w3-round w3-hover-red">Home</a></li>
             <li><a href="about.html" class="w3-button w3-round w3-hover-red">About</a></li>
             <li><a href="filmography.html" class="w3-button w3-round w3-hover-red">Filmography</a></li>
-            <li><a href="contact.html" class="w3-button w3-round w3-red">Contact</a></li>
+            <li><a href="contact.html" class="w3-button w3-round w3-hover-red">Contact</a></li>
             </ul>
 
             <div class="burger1">
@@ -55,7 +55,7 @@ const navSlide = () => {
 	burger1.addEventListener("click", () => {
 	//toggle- Nav
 	nav.classList.toggle ("nav-active");
-    document.getElementById("form-parent").style.opacity = "1";
+    document.getElementById("thanks-div").style.opacity = "1";
 	
 	//Animate Links
 	navLinks.forEach((link, index) => {
@@ -63,7 +63,7 @@ const navSlide = () => {
 	link.style.animation = ''
 	} else {
 	link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
-    document.getElementById("form-parent").style.opacity = "0";
+    document.getElementById("thanks-div").style.opacity = "0";
 	}
 	});
 	//burger animation
@@ -77,75 +77,32 @@ const navSlide = () => {
 
             </script>
         
-        </header>	
-        
-      
-      
+        </header>
 
       
 
       <div class="formdiv1 w3-row w3-center">
-            <h1 class="about-title hidden">Connect With Me</h1>
         
-            <br><div class="connect">
-            <p style="font-size: 1.5rem;">Please use the form on this page to send a direct email to me. I will do my best to respond in a timely manner.</p>
-          </div>
-          </div><br><br>
+        
         </div>
-        <div class="form-parent" id="form-parent">
+        <div class="form-parent" id="thanks-div">
         <div class="contact-half1"></div>
         <div class="contact-half2">
           
-      <form id="myForm">
-        <input id="name" name="name" class="w3-input w3-border w3-round" type="text" placeholder="Name" required><br>
-        <input id="email" name="email" class="w3-input w3-border w3-round" type="email" placeholder="Email Address" required><br>
-        <input id="phone" name="phone" class="w3-input w3-border w3-round" type="text" placeholder="Phone No." required><br>
-        <textarea id="message" name="message" class="w3-input w3-border w3-round" rows="4" placeholder="Your message here..." required></textarea><br>
-        <button type="submit" class="w3-button w3-white w3-border w3-border w3-round">Submit</button><br><br><br><br><br><br>
-      </form>
+            <div class="connect hidden" style="text-align: center; height: 500px;">
+                <h1 style="text-decoration: underline 1PX #e10202; 
+                text-underline-offset: 8px;">Thank You!</h1>
+                <br>
+                <p style="font-size: 1.5rem;">Thank you for reaching out to Rustic Films.</p>
     
+                    <p style="font-size: 1.5rem;">Your message has been successfully submitted.<br>
+                    George will do his best to respond to you promptly.</p>
+            </div>
     
     </div>
     </div>
 
-    <!--This is the emailjs sendForm function-->
-    <script 
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<!--<script src="contact.js"></script>-->
-  <script type="text/javascript">
-(function(){
-  emailjs.init("jl8DvMpSx6PF6C4DE");
-})();
-</script>
-
-<script>
-  // listen to the form submission
-  document
-    .getElementById("myForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const serviceID = "service_apcg0yx";
-      const templateID = "template_9y5k1vj";
-
-      // send the email here
-      emailjs.sendForm(serviceID, templateID, this).then(
-        (response) => {
-          
-          console.log("SUCCESS!", response.status, response.text);
-          window.location.assign("thankyou.html");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          alert("FAILED...", error);
-        }
-      );
-    });
-</script>
-<!--End of form email script-->
-
+    
 
 <br><br>
 <div class="w3-center">
