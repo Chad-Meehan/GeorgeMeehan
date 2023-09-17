@@ -148,14 +148,13 @@ body {
     height: 1000px;
 }
 
-.milkingcolours {
-    display: flex;
-    background-image: url(../images/THUMBNAILS/milkingcoloursthumbnail.jpg); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    width: auto; 
-    height: 800px;
+.milking {
+    display: grid;
+    justify-content: center;
+}
+
+.milking img {
+    width: 100%;
 }
 
 .fpage-vids {
@@ -425,6 +424,12 @@ hr {
     padding-left: 1rem;
 }
 
+.film-child3 {
+    width: 80%;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+}
+
 .thanks-div {
     background-image: url(../images/lights.jpg); 
     background-size: cover; 
@@ -540,7 +545,7 @@ hr {
     transform: translateX(0);
 }
 
-.film-child1.hidden {
+/*.film-child1.hidden {
     opacity: 0;
     filter: blur(2px);
     transition: all 1s;
@@ -551,9 +556,9 @@ hr {
     opacity: 1;
     filter: blur(0);
     transform: scale(1, 1);
-}
+}*/
 
-.film-child2.hidden {
+/*.film-child2.hidden {
     opacity: 0;
     filter: blur(2px);
     transition: all 1s;
@@ -564,5 +569,5 @@ hr {
     opacity: 1;
     filter: blur(0);
     transform: scale(1, 1);
-}
+} */
 
