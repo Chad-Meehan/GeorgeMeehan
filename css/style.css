@@ -105,6 +105,39 @@ body {
     font-size: 4rem;
 }
 
+.findmeat {
+    display: flex;
+    justify-content: center;
+}
+
+.findmeat div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.findmeat div a {
+    text-decoration: none;
+}
+
+.findmeat h4 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.findmeat h4:hover {
+    color: rgb(166, 166, 166);
+    padding-top: 0rem;
+    transition: .5s;
+}
+
+@media screen and (max-width:640px) {
+
+    .findmeat {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
 .front-pic {
     display: flex;
     background-image: url(../images/Godfather\ Lighting.jpg); 
