@@ -136,6 +136,10 @@ body {
        display: flex;
        flex-direction: column;
     }
+
+    .findmeat h4:hover {
+        padding-top: 1rem;
+    }
 }
 
 .front-pic {
@@ -302,7 +306,7 @@ body {
 
 .about-pic2 {
     flex-grow: 1;
-    background-image: url(../images/George\ with\ camera.jpg);
+    background-image: url(../images/George\ filming\ Dive\ B&W.JPG);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: top;
@@ -312,7 +316,7 @@ body {
 
 .about-pic3 {
     flex-grow: 1;
-    background-image: url(../images/GMeehan03.jpg); 
+    background-image: url(../images/George\ filming\ Dive.JPG); 
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: top;
