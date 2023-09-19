@@ -595,6 +595,19 @@ hr {
     transform: translateX(0);
 }
 
+.connect.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateY(-100%);
+}
+
+.connect.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
 /*.film-child1.hidden {
     opacity: 0;
     filter: blur(2px);
