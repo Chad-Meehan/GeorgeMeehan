@@ -103,6 +103,7 @@ body {
 
 .front-headline h1 {
     font-size: 4rem;
+    text-transform: uppercase;
 }
 
 .findmeat {
