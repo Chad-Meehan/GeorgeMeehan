@@ -72,6 +72,10 @@ header{
             transition: all .4s;  
         }
 
+		#photo-parent1 {
+            transition: all .4s;  
+        }
+
         #form-parent {
             transition: all .4s;  
         }
