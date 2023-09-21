@@ -94,13 +94,51 @@ const navSlide = () => {
         <div class="photo-gallery">
 
             <div class="photo-group">
-                <div class="photo-child1"><img src="images/THUMBNAILS/Sophie & Dot Thumbnail.jpg" alt="Sophie & Dot" style="width: 100%;"></div>
-                <div class="photo-child1"><img src="images/THUMBNAILS/Sophie & Dot Thumbnail.jpg" alt="Sophie & Dot" style="width: 100%;"></div>
-                <div class="photo-child2"><img src="images/THUMBNAILS/Sophie & Dot Thumbnail.jpg" alt="Sophie & Dot" style="width: 100%;"></div>
-                <div class="photo-child2"><img src="images/THUMBNAILS/Sophie & Dot Thumbnail.jpg" alt="Sophie & Dot" style="width: 100%;"></div>
+                <div class="photo-child1"><img src="images/Photography/photo01.png" alt="Bush"></div>
+                <div class="photo-child1"><img src="images/Photography/photo02.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo03.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo04.png" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo05.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo06.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo07.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo08.jpg" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo09.JPG" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo10.JPG" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo11.JPG" alt="Sophie & Dot"></div>
+                <div class="photo-child1"><img src="images/Photography/photo12.JPG" alt="Sophie & Dot"></div>
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <div class="popup-image-box">
+                <img src="images/Photography/photo01.png" alt="Bush">
+                </div>
             </div>
 
         </div>
+
+        <script>
+          const pops = document.querySelector(".popup-image");
+
+          document.querySelectorAll('.photo-group img').forEach(image =>{
+            image.onclick = () =>{
+              document.querySelector('.popup-image').style.display = 'block';
+              document.querySelector('.popup-image').style.transform = 'scale(1, 1)';
+              document.querySelector('.popup-image img').src = image.getAttribute('src');
+              document.querySelector('.popup-image img').style.display = 'block';
+              document.querySelector('.popup-image img').style.transform = 'scale(1, 1)';
+              
+            }
+          });
+
+          //Animation
+          
+
+          document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+          }
+          
+        </script>
         
         <div class="w3-center">
           <img src="images/Squiggle.png" alt="Squiggle" style="width: 120px;">
