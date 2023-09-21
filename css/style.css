@@ -153,6 +153,7 @@ body {
 .findmeat {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .findmeat div {
@@ -180,6 +181,10 @@ body {
     .findmeat {
        display: flex;
        flex-direction: column;
+    }
+
+    .findmeat h4 {
+        font-size: 1.5rem;
     }
 
     .findmeat h4:hover {
@@ -533,6 +538,10 @@ hr {
     .film-button a {
         font-size: 1rem;
     }
+}
+
+footer a:hover {
+    color: rgb(166, 166, 166);
 }
 
 /* Element animation */
