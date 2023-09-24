@@ -525,8 +525,8 @@ hr {
     height: 100%;
     width: 100%;
     z-index: 100;
-    transform: scale(0, 0);
-    transition: all ease-in 0.8s;
+    display: none;
+    transition: all ease-in 0.3s;
 }
 
 .popup-image span {
@@ -550,14 +550,23 @@ hr {
     max-width: 1400px;
     max-height: 800px;
     object-fit: cover;
-    transform: scale(0, 0);
-	transition: all 0.8s ease-in;
 }
 
 @media (max-width:768px) {
     .popup-image img {
         max-width: 95%;
     }
+}
+
+.popup-image img.hidden {
+    opacity: 0;
+    transition: all .8s;
+    transform: scale(0, 0);
+}
+
+.popup-image img.show {
+    opacity: 1;
+    transform: scale(1, 1);
 }
 
 .thanks-div {
@@ -568,7 +577,7 @@ hr {
 }
 
 .film-button {
-    padding-bott4m: 6rem;
+    padding-bottom: 6rem;
 }
 
 .film-button a {

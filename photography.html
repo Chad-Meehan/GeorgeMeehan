@@ -111,7 +111,7 @@ const navSlide = () => {
             <div class="popup-image" id="popup-image">
                 <span>&times;</span>
                 <div class="popup-image-box">
-                <img src="images/Photography/photo01.png" alt="Bush">
+                <img class="hidden" src="images/Photography/photo01.png" alt="Bush">
                 </div>
             </div>
 
@@ -119,23 +119,20 @@ const navSlide = () => {
 
         <script>
 
+          //Popup-image animation
+          
           document.querySelectorAll('.photo-group img').forEach(image =>{
             image.onclick = () =>{
               document.querySelector('.popup-image').style.display = 'block';
-              document.querySelector('.popup-image').style.transform = 'scale(1, 1)';
               document.querySelector('.popup-image img').src = image.getAttribute('src');
               document.querySelector('.popup-image img').style.display = 'block';
-              document.querySelector('.popup-image img').style.transform = 'scale(1, 1)';
-              
             }
           });
 
             document.querySelector('.popup-image span').onclick = () =>{
             document.querySelector('.popup-image').style.display = 'none';
             document.querySelector('.popup-image img').style.display = 'none';
-            document.querySelector('.popup-image').style.transform = 'scale(0, 0)';
-            document.querySelector('.popup-image img').style.transform = 'scale(0, 0)';
-          }
+            }
             
         </script>
         
