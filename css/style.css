@@ -525,9 +525,8 @@ hr {
     height: 100%;
     width: 100%;
     z-index: 100;
-    display: ;
     transform: scale(0, 0);
-	transition: transform 0.3s ease-in;
+    transition: all ease-in 0.8s;
 }
 
 .popup-image span {
@@ -546,21 +545,18 @@ hr {
 }
 
 .popup-image img {
-    
     border: 5px solid #fffaf0;
     border-radius: 5px;
     max-width: 1400px;
     max-height: 800px;
     object-fit: cover;
     transform: scale(0, 0);
-	transition: transform 0.8s ease-in;
-	
-    
+	transition: all 0.8s ease-in;
 }
 
 @media (max-width:768px) {
     .popup-image img {
-        width: 95%;
+        max-width: 95%;
     }
 }
 
