@@ -211,6 +211,22 @@ body {
     width: 100%;
 }
 
+.wornstrings {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.worn {
+    display: grid;
+    justify-content: center;
+    width: 65%;
+}
+
+.worn img {
+    width: 100%;
+}
+
 .fpage-vids {
     display: flex;
     flex-direction: row;
@@ -284,6 +300,10 @@ body {
     }
 }
 @media screen and (max-width:800px) {
+    .worn {
+        width: 100%;
+    }
+
     .front-pic {
         height: 400px;
     }
