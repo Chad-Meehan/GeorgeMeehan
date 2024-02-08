@@ -220,7 +220,6 @@ body {
 .worn {
     display: grid;
     justify-content: center;
-    width: 65%;
 }
 
 .worn img {
